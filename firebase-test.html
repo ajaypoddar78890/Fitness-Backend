@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Firebase Auth Test</title>
+    <script type="module">
+        // Import Firebase SDK
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getAuth, signInWithPopup, GoogleAuthProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+
+        // Your Firebase config (replace with actual values from Firebase Console)
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "athpro-ai.firebaseapp.com",
+            projectId: "athpro-ai",
+            storageBucket: "athpro-ai.appspot.com",
+            messagingSenderId: "YOUR_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const googleProvider = new GoogleAuthProvider();
+
+        // Sign in with Google
+        window.signInWithGoogle = async () => {
+            try {
+                const result = await signInWithPopup(auth, googleProvider);
+                const user = result.user;
+                const idToken = await user.getIdToken();
+
+                document.getElementById('output').innerHTML = `
+                    <h3>Signed in as: ${user.displayName}</h3>
+                    <p>Email: ${user.email}</p>
+                    <p>UID: ${user.uid}</p>
+                    <textarea style="width:100%; height:100px">${idToken}</textarea>
+                    <button onclick="testBackend('${idToken}')">Test Backend</button>
+                `;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `Error: ${error.message}`;
+            }
+        };
+
+        // Sign in with email/password
+        window.signInWithEmail = async () => {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const result = await signInWithEmailAndPassword(auth, email, password);
+                const user = result.user;
+                const idToken = await user.getIdToken();
+
+                document.getElementById('output').innerHTML = `
+                    <h3>Signed in as: ${user.email}</h3>
+                    <p>UID: ${user.uid}</p>
+                    <textarea style="width:100%; height:100px">${idToken}</textarea>
+                    <button onclick="testBackend('${idToken}')">Test Backend</button>
+                `;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `Error: ${error.message}`;
+            }
+        };
+
+        // Register with email/password
+        window.registerWithEmail = async () => {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                const result = await createUserWithEmailAndPassword(auth, email, password);
+                const user = result.user;
+                const idToken = await user.getIdToken();
+
+                document.getElementById('output').innerHTML = `
+                    <h3>Registered: ${user.email}</h3>
+                    <p>UID: ${user.uid}</p>
+                    <textarea style="width:100%; height:100px">${idToken}</textarea>
+                    <button onclick="testBackend('${idToken}')">Test Backend</button>
+                `;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `Error: ${error.message}`;
+            }
+        };
+
+        // Test your NestJS backend
+        window.testBackend = async (idToken) => {
+            try {
+                // Test 1: Exchange Firebase token for app JWT
+                const loginResponse = await fetch('http://localhost:4000/auth/firebase-login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ idToken })
+                });
+                const loginData = await loginResponse.json();
+
+                // Test 2: Get profile with Firebase token
+                const profileResponse = await fetch('http://localhost:4000/auth/profile', {
+                    headers: { 'Authorization': `Bearer ${idToken}` }
+                });
+                const profileData = await profileResponse.json();
+
+                document.getElementById('backend-result').innerHTML = `
+                    <h4>Backend Test Results:</h4>
+                    <h5>1. Firebase Login (JWT exchange):</h5>
+                    <pre>${JSON.stringify(loginData, null, 2)}</pre>
+                    <h5>2. Profile (Firebase Guard):</h5>
+                    <pre>${JSON.stringify(profileData, null, 2)}</pre>
+                `;
+            } catch (error) {
+                document.getElementById('backend-result').innerHTML = `Backend Error: ${error.message}`;
+            }
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Firebase Auth Test</h1>
+
+    <h2>Google Sign-In</h2>
+    <button onclick="signInWithGoogle()">Sign in with Google</button>
+
+    <h2>Email/Password</h2>
+    <input type="email" id="email" placeholder="email@example.com"><br><br>
+    <input type="password" id="password" placeholder="password"><br><br>
+    <button onclick="signInWithEmail()">Sign In</button>
+    <button onclick="registerWithEmail()">Register</button>
+
+    <h2>Results</h2>
+    <div id="output"></div>
+    <div id="backend-result"></div>
+</body>
+
+</html>

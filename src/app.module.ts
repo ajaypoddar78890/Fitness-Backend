@@ -6,6 +6,10 @@ import { UsersModule } from './modules/users/users.module';
 import { WorkoutsModule } from './modules/workouts/workouts.module';
 import { NutritionModule } from './modules/nutrition/nutrition.module';
 import { FitnessTrackingModule } from './modules/fitness-tracking/fitness-tracking.module';
+import { WorkoutTypesModule } from './modules/workout-types/workout-types.module';
+import { MuscleGroupsModule } from './modules/muscle-groups/muscle-groups.module';
+import { ExercisesModule } from './modules/exercises/exercises.module';
+import { ExerciseLogsModule } from './modules/exercise-logs/exercise-logs.module';
 
 @Module({
   imports: [
@@ -18,7 +22,11 @@ import { FitnessTrackingModule } from './modules/fitness-tracking/fitness-tracki
     UsersModule,
     WorkoutsModule,
     NutritionModule,
-    FitnessTrackingModule
+    FitnessTrackingModule,
+    WorkoutTypesModule,
+    MuscleGroupsModule,
+    ExercisesModule,
+    ExerciseLogsModule,
   ],
 })
 export class AppModule {}

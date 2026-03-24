@@ -1,10 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
+import { BaseDocumentSchema, applyBaseSchemaFeatures } from '../common/schemas/base-document.schema';
 
 export type ExerciseLogDocument = ExerciseLog & Document;
 
-@Schema({ collection: 'exercise_logs' })
-export class ExerciseLog {
+@Schema({ collection: 'exercise_logs', timestamps: true })
+export class ExerciseLog extends BaseDocumentSchema {
   @Prop({ type: Types.ObjectId, ref: 'Exercise', required: true })
   exerciseId: Types.ObjectId;
 
@@ -28,9 +29,7 @@ export class ExerciseLog {
 
   @Prop({ default: false })
   isPersonalRecord: boolean;
-
-  @Prop({ default: Date.now })
-  createdAt: Date;
 }
 
 export const ExerciseLogSchema = SchemaFactory.createForClass(ExerciseLog);
+applyBaseSchemaFeatures(ExerciseLogSchema);

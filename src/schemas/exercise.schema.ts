@@ -1,10 +1,11 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
+import { BaseDocumentSchema, applyBaseSchemaFeatures } from '../common/schemas/base-document.schema';
 
 export type ExerciseDocument = Exercise & Document;
 
-@Schema({ collection: 'exercises' })
-export class Exercise {
+@Schema({ collection: 'exercises', timestamps: true })
+export class Exercise extends BaseDocumentSchema {
   @Prop({ type: Types.ObjectId, ref: 'MuscleGroup', required: true })
   muscleGroupId: Types.ObjectId;
 
@@ -40,9 +41,7 @@ export class Exercise {
 
   @Prop()
   durationSeconds: number;
-
-  @Prop({ default: Date.now })
-  createdAt: Date;
 }
 
 export const ExerciseSchema = SchemaFactory.createForClass(Exercise);
+applyBaseSchemaFeatures(ExerciseSchema);

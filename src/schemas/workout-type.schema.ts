@@ -1,18 +1,17 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
+import { BaseDocumentSchema, applyBaseSchemaFeatures } from '../common/schemas/base-document.schema';
 
 export type WorkoutTypeDocument = WorkoutType & Document;
 
-@Schema({ collection: 'workout_types' })
-export class WorkoutType {
+@Schema({ collection: 'workout_types', timestamps: true })
+export class WorkoutType extends BaseDocumentSchema {
   @Prop({ required: true })
   label: string;
 
   @Prop()
   icon: string;
-
-  @Prop({ default: Date.now })
-  createdAt: Date;
 }
 
 export const WorkoutTypeSchema = SchemaFactory.createForClass(WorkoutType);
+applyBaseSchemaFeatures(WorkoutTypeSchema);

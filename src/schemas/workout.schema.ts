@@ -1,5 +1,6 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
+import { BaseDocumentSchema, applyBaseSchemaFeatures } from '../common/schemas/base-document.schema';
 
 export type WorkoutDocument = Workout & Document;
 
@@ -58,7 +59,7 @@ export class WorkoutSection {
 }
 
 @Schema({ timestamps: true })
-export class Workout {
+export class Workout extends BaseDocumentSchema {
   @Prop({ required: true })
   name: string;
 
@@ -97,3 +98,4 @@ export class Workout {
 }
 
 export const WorkoutSchema = SchemaFactory.createForClass(Workout);
+applyBaseSchemaFeatures(WorkoutSchema);

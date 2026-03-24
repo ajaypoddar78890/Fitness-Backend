@@ -14,8 +14,17 @@ export class Exercise {
   @Prop({ required: true })
   name: string;
 
+  @Prop()
+  imageUrl: string;
+
+  @Prop()
+  summary: string;
+
   @Prop({ enum: ['barbell', 'dumbbell', 'cable', 'bodyweight', 'machine'] })
   equipment: string;
+
+  @Prop()
+  equipmentDetails: string;
 
   @Prop({ enum: ['beginner', 'intermediate', 'advanced'] })
   difficulty: string;
@@ -25,6 +34,12 @@ export class Exercise {
 
   @Prop()
   videoUrl: string;
+
+  @Prop({ type: [String], default: [] })
+  techniqueSteps: string[];
+
+  @Prop()
+  durationSeconds: number;
 
   @Prop({ default: Date.now })
   createdAt: Date;

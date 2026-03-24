@@ -42,10 +42,30 @@ export class ExercisesService {
       .sort({ weightKg: -1 })
       .exec();
 
+    const exerciseObj: any = exercise.toObject();
+
     return {
-      ...exercise.toObject(),
+      ...exerciseObj,
+      details: {
+        imageUrl: exerciseObj.imageUrl || null,
+        summary: exerciseObj.summary || null,
+        equipment: exerciseObj.equipment || null,
+        equipmentDetails: exerciseObj.equipmentDetails || null,
+        techniqueSteps:
+          Array.isArray(exerciseObj.techniqueSteps) && exerciseObj.techniqueSteps.length > 0
+            ? exerciseObj.techniqueSteps
+            : exerciseObj.instructions
+              ? [exerciseObj.instructions]
+              : [],
+      },
       recentLogs,
-      personalRecord: prLog ? prLog.weightKg : null,
+      personalRecord: prLog
+        ? {
+            weightKg: prLog.weightKg,
+            logId: prLog._id,
+            date: prLog.date,
+          }
+        : null,
     };
   }
 }

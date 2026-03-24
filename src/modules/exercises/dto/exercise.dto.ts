@@ -4,6 +4,8 @@ import {
   IsString,
   IsMongoId,
   IsEnum,
+  IsArray,
+  IsNumber,
 } from 'class-validator';
 
 export enum Equipment {
@@ -34,6 +36,14 @@ export class CreateExerciseDto {
   name: string;
 
   @IsOptional()
+  @IsString()
+  imageUrl?: string;
+
+  @IsOptional()
+  @IsString()
+  summary?: string;
+
+  @IsOptional()
   @IsEnum(Equipment)
   equipment?: Equipment;
 
@@ -43,9 +53,22 @@ export class CreateExerciseDto {
 
   @IsOptional()
   @IsString()
+  equipmentDetails?: string;
+
+  @IsOptional()
+  @IsString()
   instructions?: string;
 
   @IsOptional()
   @IsString()
   videoUrl?: string;
+
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  techniqueSteps?: string[];
+
+  @IsOptional()
+  @IsNumber()
+  durationSeconds?: number;
 }

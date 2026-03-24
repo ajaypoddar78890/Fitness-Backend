@@ -36,3 +36,33 @@ export class CreateExerciseLogDto {
   @IsString()
   notes?: string;
 }
+
+export class UpdateExerciseLogDto {
+  @IsOptional()
+  @IsMongoId()
+  exerciseId?: string;
+
+  @IsOptional()
+  @IsMongoId()
+  userId?: string;
+
+  @IsOptional()
+  @IsDateString()
+  date?: string;
+
+  @IsOptional()
+  @IsNumber()
+  sets?: number;
+
+  @IsOptional()
+  @IsNumber()
+  reps?: number;
+
+  @IsOptional()
+  @IsNumber()
+  weightKg?: number;
+
+  @IsOptional()
+  @IsString()
+  notes?: string;
+}

@@ -72,3 +72,54 @@ export class CreateExerciseDto {
   @IsNumber()
   durationSeconds?: number;
 }
+
+export class UpdateExerciseDto {
+  @IsOptional()
+  @IsMongoId()
+  muscleGroupId?: string;
+
+  @IsOptional()
+  @IsMongoId()
+  workoutTypeId?: string;
+
+  @IsOptional()
+  @IsString()
+  name?: string;
+
+  @IsOptional()
+  @IsString()
+  imageUrl?: string;
+
+  @IsOptional()
+  @IsString()
+  summary?: string;
+
+  @IsOptional()
+  @IsEnum(Equipment)
+  equipment?: Equipment;
+
+  @IsOptional()
+  @IsEnum(Difficulty)
+  difficulty?: Difficulty;
+
+  @IsOptional()
+  @IsString()
+  equipmentDetails?: string;
+
+  @IsOptional()
+  @IsString()
+  instructions?: string;
+
+  @IsOptional()
+  @IsString()
+  videoUrl?: string;
+
+  @IsOptional()
+  @IsArray()
+  @IsString({ each: true })
+  techniqueSteps?: string[];
+
+  @IsOptional()
+  @IsNumber()
+  durationSeconds?: number;
+}

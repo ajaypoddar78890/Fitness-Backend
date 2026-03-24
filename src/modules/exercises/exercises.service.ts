@@ -3,7 +3,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Exercise, ExerciseDocument } from '../../schemas/exercise.schema';
 import { ExerciseLog, ExerciseLogDocument } from '../../schemas/exercise-log.schema';
-import { CreateExerciseDto } from './dto/exercise.dto';
+import { CreateExerciseDto, UpdateExerciseDto } from './dto/exercise.dto';
 
 @Injectable()
 export class ExercisesService {
@@ -18,6 +18,14 @@ export class ExercisesService {
 
   async findByMuscleGroup(muscleGroupId: string): Promise<Exercise[]> {
     return this.exerciseModel.find({ muscleGroupId }).exec();
+  }
+
+  async update(id: string, dto: UpdateExerciseDto): Promise<Exercise | null> {
+    return this.exerciseModel.findByIdAndUpdate(id, dto, { new: true }).exec();
+  }
+
+  async remove(id: string): Promise<Exercise | null> {
+    return this.exerciseModel.findByIdAndDelete(id).exec();
   }
 
   async findByIdWithDetails(id: string) {

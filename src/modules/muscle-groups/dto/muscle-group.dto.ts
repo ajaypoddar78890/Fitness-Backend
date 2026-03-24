@@ -9,3 +9,13 @@ export class CreateMuscleGroupDto {
   @IsString()
   label: string;
 }
+
+export class UpdateMuscleGroupDto {
+  @IsOptional()
+  @IsMongoId()
+  workoutTypeId?: string;
+
+  @IsOptional()
+  @IsString()
+  label?: string;
+}

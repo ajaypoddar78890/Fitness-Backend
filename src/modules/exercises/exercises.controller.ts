@@ -2,6 +2,8 @@ import {
   Controller,
   Post,
   Get,
+  Put,
+  Delete,
   Body,
   Query,
   Param,
@@ -13,7 +15,7 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { ExercisesService } from './exercises.service';
-import { CreateExerciseDto } from './dto/exercise.dto';
+import { CreateExerciseDto, UpdateExerciseDto } from './dto/exercise.dto';
 
 @Controller('exercises')
 @UsePipes(new ValidationPipe({ whitelist: true }))
@@ -47,6 +49,36 @@ export class ExercisesController {
   async findById(@Param('id') id: string) {
     try {
       const data = await this.exercisesService.findByIdWithDetails(id);
+      if (!data) {
+        throw new NotFoundException({ success: false, message: 'Exercise not found' });
+      }
+      return { success: true, data };
+    } catch (err) {
+      if (err instanceof NotFoundException) throw err;
+      throw new BadRequestException({ success: false, message: err.message });
+    }
+  }
+
+  @Put(':id')
+  @HttpCode(HttpStatus.OK)
+  async update(@Param('id') id: string, @Body() dto: UpdateExerciseDto) {
+    try {
+      const data = await this.exercisesService.update(id, dto);
+      if (!data) {
+        throw new NotFoundException({ success: false, message: 'Exercise not found' });
+      }
+      return { success: true, data };
+    } catch (err) {
+      if (err instanceof NotFoundException) throw err;
+      throw new BadRequestException({ success: false, message: err.message });
+    }
+  }
+
+  @Delete(':id')
+  @HttpCode(HttpStatus.OK)
+  async remove(@Param('id') id: string) {
+    try {
+      const data = await this.exercisesService.remove(id);
       if (!data) {
         throw new NotFoundException({ success: false, message: 'Exercise not found' });
       }

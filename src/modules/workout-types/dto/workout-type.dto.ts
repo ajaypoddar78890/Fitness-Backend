@@ -9,3 +9,13 @@ export class CreateWorkoutTypeDto {
   @IsString()
   icon?: string;
 }
+
+export class UpdateWorkoutTypeDto {
+  @IsOptional()
+  @IsString()
+  label?: string;
+
+  @IsOptional()
+  @IsString()
+  icon?: string;
+}

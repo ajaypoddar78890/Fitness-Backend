@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { ExerciseLog, ExerciseLogDocument } from '../../schemas/exercise-log.schema';
-import { CreateExerciseLogDto } from './dto/exercise-log.dto';
+import { CreateExerciseLogDto, UpdateExerciseLogDto } from './dto/exercise-log.dto';
 
 @Injectable()
 export class ExerciseLogsService {
@@ -30,5 +30,13 @@ export class ExerciseLogsService {
     }
 
     return saved;
+  }
+
+  async update(id: string, dto: UpdateExerciseLogDto): Promise<ExerciseLog | null> {
+    return this.exerciseLogModel.findByIdAndUpdate(id, dto, { new: true }).exec();
+  }
+
+  async remove(id: string): Promise<ExerciseLog | null> {
+    return this.exerciseLogModel.findByIdAndDelete(id).exec();
   }
 }

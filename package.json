@@ -6,7 +6,8 @@
     "start": "node dist/main.js",
     "start:dev": "ts-node-dev --respawn --transpile-only src/main.ts",
     "build": "tsc -p tsconfig.build.json",
-    "lint": "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts",
+    "backfill:workout-base": "node scripts/backfill-workout-domain-base-fields.js"
   },
   "dependencies": {
     "@google-cloud/firestore": "^8.0.0",

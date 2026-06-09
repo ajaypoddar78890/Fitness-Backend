@@ -8,4 +8,9 @@ export const config = {
     refreshSecret: process.env.JWT_REFRESH_SECRET || 'your_refresh_secret_change_me',
     refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN || '7d',
   },
+  openai: {
+    // Key stored lowercase in .env; uppercase fallback supported.
+    apiKey: process.env.openai_api_key || process.env.OPENAI_API_KEY || '',
+    model: process.env.OPENAI_MODEL || 'gpt-5.4',
+  },
 };

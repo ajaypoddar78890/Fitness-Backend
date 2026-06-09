@@ -10,6 +10,8 @@ import { WorkoutTypesModule } from './modules/workout-types/workout-types.module
 import { MuscleGroupsModule } from './modules/muscle-groups/muscle-groups.module';
 import { ExercisesModule } from './modules/exercises/exercises.module';
 import { ExerciseLogsModule } from './modules/exercise-logs/exercise-logs.module';
+import { AiTrainerModule } from './modules/ai-trainer/ai-trainer.module';
+import { SavedWorkoutsModule } from './modules/saved-workouts/saved-workouts.module';
 
 @Module({
   imports: [
@@ -27,6 +29,8 @@ import { ExerciseLogsModule } from './modules/exercise-logs/exercise-logs.module
     MuscleGroupsModule,
     ExercisesModule,
     ExerciseLogsModule,
+    AiTrainerModule,
+    SavedWorkoutsModule,
   ],
 })
 export class AppModule {}

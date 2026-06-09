@@ -1,0 +1,800 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b0e"
+    },
+    "uid": "57185693e4aa4e04af2ee6e29590cce0",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b01"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Bench Press",
+    "imageUrl": "",
+    "summary": "Primary chest exercise",
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": "Lie on bench, lower bar to chest, press up",
+    "techniqueSteps": [
+      "Setup",
+      "Lower",
+      "Press"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b0f"
+    },
+    "uid": "7a59c2ed451c4c5db95be0337d0a0996",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b01"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Push-ups",
+    "imageUrl": "",
+    "summary": "Bodyweight chest exercise",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Get in plank position, lower body, push back up",
+    "techniqueSteps": [
+      "Position",
+      "Lower",
+      "Push"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b10"
+    },
+    "uid": "d364534ed2c944c58de801a95bbe2d06",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b01"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Chest Fly",
+    "imageUrl": "",
+    "summary": "Isolation chest exercise",
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": "Lie on bench, bring dumbbells together in arc motion",
+    "techniqueSteps": [
+      "Setup",
+      "Lower",
+      "Fly"
+    ],
+    "durationSeconds": 40,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b11"
+    },
+    "uid": "796ccf06b7364a90ab419bfd83eacccc",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b01"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Incline Press",
+    "imageUrl": "",
+    "summary": "Upper chest focus",
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "instructions": "Press on incline bench",
+    "techniqueSteps": [
+      "Setup",
+      "Lower",
+      "Press"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b12"
+    },
+    "uid": "30007f26cfcc4c4b8ac0779ba25390fc",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b02"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Deadlift",
+    "imageUrl": "",
+    "summary": "Main posterior chain exercise",
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "instructions": "Stand with feet shoulder-width, grip bar, lift",
+    "techniqueSteps": [
+      "Setup",
+      "Grip",
+      "Lift"
+    ],
+    "durationSeconds": 60,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b13"
+    },
+    "uid": "a885f3e203854ffbb90a1601df7f794a",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b02"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Pull-ups",
+    "imageUrl": "",
+    "summary": "Upper back bodyweight exercise",
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": "Hang on bar, pull body up",
+    "techniqueSteps": [
+      "Grip",
+      "Pull",
+      "Lower"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b14"
+    },
+    "uid": "48964943a6a7455cb0479ffa477d85fd",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b02"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Lat Pulldown",
+    "imageUrl": "",
+    "summary": "Machine lat exercise",
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": "Sit, pull handle down",
+    "techniqueSteps": [
+      "Setup",
+      "Pull"
+    ],
+    "durationSeconds": 35,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b15"
+    },
+    "uid": "b1199f33c81e49d596a21e615b1d64ea",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b02"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Bent-over Row",
+    "imageUrl": "",
+    "summary": "Compound back builder",
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": "Bend at waist, row bar to chest",
+    "techniqueSteps": [
+      "Setup",
+      "Hinge",
+      "Row"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b16"
+    },
+    "uid": "ec0fb763d31749bda217d97bda68613c",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b03"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Squats",
+    "imageUrl": "",
+    "summary": "Main leg compound",
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "instructions": "Stand, lower hips back, rise",
+    "techniqueSteps": [
+      "Setup",
+      "Lower",
+      "Rise"
+    ],
+    "durationSeconds": 50,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b17"
+    },
+    "uid": "d5a5e2d7930f428ca2bf4cc198f31b45",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b03"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Lunges",
+    "imageUrl": "",
+    "summary": "Single leg exercise",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Step forward, lower hips, return",
+    "techniqueSteps": [
+      "Step",
+      "Lower",
+      "Return"
+    ],
+    "durationSeconds": 35,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b18"
+    },
+    "uid": "04e1ea778be64549a1e51ed49bce35fd",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b03"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Leg Press",
+    "imageUrl": "",
+    "summary": "Machine leg compound",
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": "Push platform away",
+    "techniqueSteps": [
+      "Setup",
+      "Lower",
+      "Press"
+    ],
+    "durationSeconds": 40,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b19"
+    },
+    "uid": "771cf55d30564097a5c2aefdfe028a06",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b03"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Romanian Deadlift",
+    "imageUrl": "",
+    "summary": "Hamstring focused",
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": "Hinge at hips, keep legs straight",
+    "techniqueSteps": [
+      "Setup",
+      "Hinge",
+      "Lift"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b1a"
+    },
+    "uid": "a3697e2a17bf4f789f0142742d36b64f",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b04"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Overhead Press",
+    "imageUrl": "",
+    "summary": "Standing shoulder press",
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": "Press bar overhead",
+    "techniqueSteps": [
+      "Setup",
+      "Press"
+    ],
+    "durationSeconds": 40,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b1b"
+    },
+    "uid": "4d4781f31007424b92541c0fc3882ddb",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b04"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Lateral Raise",
+    "imageUrl": "",
+    "summary": "Side delt isolation",
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": "Raise dumbbells to sides",
+    "techniqueSteps": [
+      "Setup",
+      "Raise"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b1c"
+    },
+    "uid": "3a45d6f1bf55471396c157ed62d2825d",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b04"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Front Raise",
+    "imageUrl": "",
+    "summary": "Front delt exercise",
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": "Raise dumbbells to front",
+    "techniqueSteps": [
+      "Setup",
+      "Raise"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b1d"
+    },
+    "uid": "687316646b154fb78e54b4b4e69583fd",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b05"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Bicep Curl",
+    "imageUrl": "",
+    "summary": "Bicep isolation",
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": "Curl dumbbells up",
+    "techniqueSteps": [
+      "Setup",
+      "Curl"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b1e"
+    },
+    "uid": "47eb32a2fa24444e821e5bc27e6f0c90",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b05"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Tricep Dip",
+    "imageUrl": "",
+    "summary": "Tricep bodyweight",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Lower and raise body on bars",
+    "techniqueSteps": [
+      "Setup",
+      "Lower",
+      "Rise"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b1f"
+    },
+    "uid": "f1a108cbe5f64ad29713f061ecccf6ed",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b05"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "name": "Hammer Curl",
+    "imageUrl": "",
+    "summary": "Brachialis exercise",
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": "Curl with hammer grip",
+    "techniqueSteps": [
+      "Setup",
+      "Curl"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b20"
+    },
+    "uid": "2f98365a843043a28af9a029f8c91374",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b0a"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418aff"
+    },
+    "name": "Burpees",
+    "imageUrl": "",
+    "summary": "Full body cardio blast",
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": "Squat, jump back, pushup, jump up",
+    "techniqueSteps": [
+      "Squat",
+      "Jump Back",
+      "Pushup",
+      "Jump Up"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b21"
+    },
+    "uid": "4d39d984ec3041e1b944a0fa957f95ed",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b06"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afd"
+    },
+    "name": "Jump Rope",
+    "imageUrl": "",
+    "summary": "Cardio classic",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Jump while swinging rope",
+    "techniqueSteps": [
+      "Setup",
+      "Jump"
+    ],
+    "durationSeconds": 300,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b22"
+    },
+    "uid": "edc143a03f844d87ae36b94ee4b4da2e",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b0a"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418aff"
+    },
+    "name": "Mountain Climbers",
+    "imageUrl": "",
+    "summary": "HIIT core burner",
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": "Plank position, alternate knee drives",
+    "techniqueSteps": [
+      "Plank",
+      "Drive"
+    ],
+    "durationSeconds": 30,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b23"
+    },
+    "uid": "97074e5bfe5d4ad7b2f98355c056aa13",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b08"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afe"
+    },
+    "name": "Plank",
+    "imageUrl": "",
+    "summary": "Core stability pose",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Hold plank position",
+    "techniqueSteps": [
+      "Setup",
+      "Hold"
+    ],
+    "durationSeconds": 60,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b24"
+    },
+    "uid": "d31edd8f506a4f70a7553e2bc3b52215",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b09"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afe"
+    },
+    "name": "Warrior Pose",
+    "imageUrl": "",
+    "summary": "Yoga standing pose",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Step forward, lower hips, reach up",
+    "techniqueSteps": [
+      "Step",
+      "Lower",
+      "Reach"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b25"
+    },
+    "uid": "fbe851bcc48840f4a06790ace3c7fd10",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b09"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afe"
+    },
+    "name": "Downward Dog",
+    "imageUrl": "",
+    "summary": "Full body yoga stretch",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Form inverted V shape",
+    "techniqueSteps": [
+      "Hands",
+      "Hips"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b26"
+    },
+    "uid": "976ae61d0c7b4715b5f380be92483fde",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b0c"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418b00"
+    },
+    "name": "Cat-Cow",
+    "imageUrl": "",
+    "summary": "Spine mobility stretch",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Alternate spinal flexion and extension",
+    "techniqueSteps": [
+      "Cat",
+      "Cow"
+    ],
+    "durationSeconds": 45,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b27"
+    },
+    "uid": "184d5a158f074596bc8fd1e26d9941df",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b0d"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418b00"
+    },
+    "name": "Hip Flexor Stretch",
+    "imageUrl": "",
+    "summary": "Hip flexibility",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Step forward, sink hips",
+    "techniqueSteps": [
+      "Step",
+      "Sink"
+    ],
+    "durationSeconds": 60,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b28"
+    },
+    "uid": "b24e237719ce4ed29302b1dd026d9e42",
+    "muscleGroupId": {
+      "$oid": "6a23bdb0d5732cfded418b0d"
+    },
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418b00"
+    },
+    "name": "Hamstring Stretch",
+    "imageUrl": "",
+    "summary": "Posterior chain flexibility",
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": "Bend forward, reach to toes",
+    "techniqueSteps": [
+      "Bend",
+      "Reach"
+    ],
+    "durationSeconds": 60,
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  }
+]

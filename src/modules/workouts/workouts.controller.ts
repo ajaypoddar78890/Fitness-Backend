@@ -10,7 +10,7 @@ export class WorkoutsController {
     return this.svc.create(body);
   }
 
-  @Get('user/:uid')
+  @Get('user/:uid') 
   async list(@Param('uid') uid: string) {
     return this.svc.findByUser(uid);
   }

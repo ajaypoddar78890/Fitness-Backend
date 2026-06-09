@@ -1,0 +1,470 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b35"
+    },
+    "uid": "58ebd54e60de4a0997db442541586968",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b0e"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "date": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "sets": 4,
+    "reps": 8,
+    "weightKg": 100,
+    "notes": "Good form",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b36"
+    },
+    "uid": "c12d898629744c89958c033559a40701",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b16"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "date": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "sets": 4,
+    "reps": 10,
+    "weightKg": 120,
+    "notes": "ATG squats",
+    "isPersonalRecord": true,
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b37"
+    },
+    "uid": "3f8d25e8d49d44dd8600bfdb6a2da56b",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b12"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "date": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 5,
+    "weightKg": 140,
+    "notes": "Strong session",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b38"
+    },
+    "uid": "9ffa96d1b8fa48b8baa05e6a97afe45f",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b17"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "date": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 12,
+    "weightKg": 25,
+    "notes": "Felt easy",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b39"
+    },
+    "uid": "0083b49971894cddb69e5f0c666cb849",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b16"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "date": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 10,
+    "weightKg": 70,
+    "notes": "Steady progress",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b3a"
+    },
+    "uid": "949998e902874dda960215e2737783d7",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b19"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "date": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 8,
+    "weightKg": 65,
+    "notes": "Hamstring focus",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b3b"
+    },
+    "uid": "dd50e7f45274484f9947201a97df5e00",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b12"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "date": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 6,
+    "weightKg": 160,
+    "notes": "Heavy day",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b3c"
+    },
+    "uid": "890460f0a14e425a94e63586cd08357f",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b13"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "date": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "sets": 4,
+    "reps": 8,
+    "weightKg": 0,
+    "notes": "Bodyweight",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b3d"
+    },
+    "uid": "bbc2e39372b247ba97c3618fdc4edc77",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b1d"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "date": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 12,
+    "weightKg": 30,
+    "notes": "Pump achieved",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b3e"
+    },
+    "uid": "f3d830cd9472490d844bfb8376026a45",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b21"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "date": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 100,
+    "weightKg": 0,
+    "notes": "Cardio session",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b3f"
+    },
+    "uid": "a538eb1dac6948c6a6455cf5c21d917b",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b0f"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "date": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 15,
+    "weightKg": 0,
+    "notes": "Bodyweight",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b40"
+    },
+    "uid": "5fb44108ee1e4f3bb0e363e120d6bc1c",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b23"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "date": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 1,
+    "weightKg": 0,
+    "notes": "2 minute hold",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b41"
+    },
+    "uid": "66d113dc789d4031b2c8ee5fbece69ba",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b21"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "date": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "sets": 1,
+    "reps": 3600,
+    "weightKg": 0,
+    "notes": "Long run",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b42"
+    },
+    "uid": "64b7dded7ab24bd6becbd64312beab84",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b20"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "date": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "sets": 10,
+    "reps": 10,
+    "weightKg": 0,
+    "notes": "HIIT intervals",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b43"
+    },
+    "uid": "0ed05116c8fc4bf3983883c8136b374b",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b22"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "date": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 40,
+    "weightKg": 0,
+    "notes": "Core work",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b44"
+    },
+    "uid": "a432ea17203941ca941ef19466591f35",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b1a"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "date": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 8,
+    "weightKg": 45,
+    "notes": "Strong",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b45"
+    },
+    "uid": "a27879f9d03e4e9b8707e2a2f262ceda",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b14"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "date": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 10,
+    "weightKg": 70,
+    "notes": "Great form",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b46"
+    },
+    "uid": "09a53450059a413eb1d5d9b9f9fd0d7c",
+    "exerciseId": {
+      "$oid": "6a23bdb0d5732cfded418b1d"
+    },
+    "userId": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "date": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "sets": 3,
+    "reps": 12,
+    "weightKg": 20,
+    "notes": "Good burn",
+    "isPersonalRecord": false,
+    "createdAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-27T08:00:00.000Z"
+    }
+  }
+]

@@ -1,0 +1,747 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b29"
+    },
+    "uid": "89ed87edb00f476fa82f4aa147b31c7e",
+    "name": "Full Body Strength",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "imageUrl": "",
+    "description": "Complete full body workout",
+    "duration": 60,
+    "caloriesKcal": 500,
+    "difficulty": "intermediate",
+    "equipmentItems": [
+      {
+        "name": "Barbell",
+        "icon": "🏋️"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Main Lifts",
+        "totalExercises": 3,
+        "totalMinutes": 40,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b0e"
+            },
+            "title": "Bench Press",
+            "reps": 8,
+            "durationLabel": "1 min rest"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b16"
+            },
+            "title": "Squats",
+            "reps": 10,
+            "durationLabel": "1.5 min rest"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b12"
+            },
+            "title": "Deadlift",
+            "reps": 5,
+            "durationLabel": "2 min rest"
+          }
+        ]
+      },
+      {
+        "title": "Accessories",
+        "totalExercises": 2,
+        "totalMinutes": 20,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1d"
+            },
+            "title": "Bicep Curl",
+            "reps": 12
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1e"
+            },
+            "title": "Tricep Dip",
+            "reps": 12
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-03-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b2a"
+    },
+    "uid": "63783cd5835f4f28bea7c1c9018b68c6",
+    "name": "HIIT Cardio Blast",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "imageUrl": "",
+    "description": "High intensity interval training",
+    "duration": 30,
+    "caloriesKcal": 350,
+    "difficulty": "advanced",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Warmup",
+        "totalExercises": 1,
+        "totalMinutes": 5,
+        "items": [
+          {
+            "type": "rest",
+            "restSeconds": 300,
+            "durationLabel": "Cardio warmup"
+          }
+        ]
+      },
+      {
+        "title": "Intervals",
+        "totalExercises": 3,
+        "totalMinutes": 20,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b20"
+            },
+            "title": "Burpees",
+            "durationLabel": "45 sec work"
+          },
+          {
+            "type": "rest",
+            "restSeconds": 15,
+            "durationLabel": "Rest"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b22"
+            },
+            "title": "Mountain Climbers",
+            "durationLabel": "45 sec work"
+          },
+          {
+            "type": "rest",
+            "restSeconds": 15,
+            "durationLabel": "Rest"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b21"
+            },
+            "title": "Jump Rope",
+            "durationLabel": "45 sec work"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-03-05T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b2b"
+    },
+    "uid": "d160e680d32a46c7a12c67e0e64fe533",
+    "name": "Lower Body Focus",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "imageUrl": "",
+    "description": "Legs and glutes workout",
+    "duration": 45,
+    "caloriesKcal": 350,
+    "difficulty": "intermediate",
+    "equipmentItems": [
+      {
+        "name": "Dumbbells",
+        "icon": "🏋️"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Main Lifts",
+        "totalExercises": 3,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b16"
+            },
+            "title": "Squats",
+            "reps": 10
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b17"
+            },
+            "title": "Lunges",
+            "reps": 12
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b19"
+            },
+            "title": "Romanian Deadlift",
+            "reps": 8
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-03-10T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b2c"
+    },
+    "uid": "940aaf1ee82a4eaf844ed061f1261893",
+    "name": "Yoga Flow",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "imageUrl": "",
+    "description": "Relaxing yoga session",
+    "duration": 50,
+    "caloriesKcal": 150,
+    "difficulty": "beginner",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Poses",
+        "totalExercises": 4,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b25"
+            },
+            "title": "Downward Dog",
+            "durationLabel": "1 min"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b24"
+            },
+            "title": "Warrior Pose",
+            "durationLabel": "1 min each side"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b23"
+            },
+            "title": "Plank",
+            "durationLabel": "1 min"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b26"
+            },
+            "title": "Cat-Cow",
+            "durationLabel": "2 min"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-03-15T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b2d"
+    },
+    "uid": "0e134780256f44d2b42a8a5e459c2a11",
+    "name": "Back and Biceps",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "imageUrl": "",
+    "description": "Pull focus workout",
+    "duration": 50,
+    "caloriesKcal": 400,
+    "difficulty": "intermediate",
+    "equipmentItems": [
+      {
+        "name": "Barbell",
+        "icon": "🏋️"
+      },
+      {
+        "name": "Pull-up Bar",
+        "icon": "🤸"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Main Lifts",
+        "totalExercises": 4,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b12"
+            },
+            "title": "Deadlift",
+            "reps": 6
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b15"
+            },
+            "title": "Bent-over Row",
+            "reps": 8
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b13"
+            },
+            "title": "Pull-ups",
+            "reps": 10
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1d"
+            },
+            "title": "Bicep Curl",
+            "reps": 12
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-03-20T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b2e"
+    },
+    "uid": "4903bab4ac544aba92a4adabd6570174",
+    "name": "Chest Day",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "imageUrl": "",
+    "description": "Chest and shoulder workout",
+    "duration": 55,
+    "caloriesKcal": 450,
+    "difficulty": "intermediate",
+    "equipmentItems": [
+      {
+        "name": "Barbell",
+        "icon": "🏋️"
+      },
+      {
+        "name": "Dumbbells",
+        "icon": "🏋️"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Main Lifts",
+        "totalExercises": 5,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b0e"
+            },
+            "title": "Bench Press",
+            "reps": 8
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b11"
+            },
+            "title": "Incline Press",
+            "reps": 8
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b10"
+            },
+            "title": "Chest Fly",
+            "reps": 10
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1a"
+            },
+            "title": "Overhead Press",
+            "reps": 8
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1b"
+            },
+            "title": "Lateral Raise",
+            "reps": 12
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-03-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b2f"
+    },
+    "uid": "1bb335f339c449df86a758edb20b16c6",
+    "name": "Cardio Endurance",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "imageUrl": "",
+    "description": "Steady state cardio",
+    "duration": 40,
+    "caloriesKcal": 300,
+    "difficulty": "beginner",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Cardio",
+        "totalExercises": 2,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b21"
+            },
+            "title": "Jump Rope",
+            "durationLabel": "15 min"
+          },
+          {
+            "type": "rest",
+            "restSeconds": 300,
+            "durationLabel": "Recovery"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-04-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b30"
+    },
+    "uid": "8c26cedce4384b8ba8716524a5d770ff",
+    "name": "Flexibility Session",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "imageUrl": "",
+    "description": "Stretching and mobility",
+    "duration": 35,
+    "caloriesKcal": 100,
+    "difficulty": "beginner",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Stretches",
+        "totalExercises": 3,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b27"
+            },
+            "title": "Hip Flexor Stretch",
+            "durationLabel": "2 min each side"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b28"
+            },
+            "title": "Hamstring Stretch",
+            "durationLabel": "2 min each leg"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b26"
+            },
+            "title": "Cat-Cow",
+            "durationLabel": "2 min"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-04-05T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b31"
+    },
+    "uid": "86a07c09d7e4482e9d4e226bec9c8dc9",
+    "name": "Marathon Training",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "imageUrl": "",
+    "description": "Long distance running",
+    "duration": 75,
+    "caloriesKcal": 600,
+    "difficulty": "intermediate",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Run",
+        "totalExercises": 1,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b21"
+            },
+            "title": "Distance Run",
+            "durationLabel": "75 min steady pace"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-04-10T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b32"
+    },
+    "uid": "d548091fb9c44dffbac3b6c69c115e36",
+    "name": "Speed Intervals",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "imageUrl": "",
+    "description": "Speed and endurance training",
+    "duration": 45,
+    "caloriesKcal": 400,
+    "difficulty": "advanced",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Intervals",
+        "totalExercises": 2,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b21"
+            },
+            "title": "Sprint",
+            "durationLabel": "2 min hard"
+          },
+          {
+            "type": "rest",
+            "restSeconds": 120,
+            "durationLabel": "Recovery jog"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-04-15T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b33"
+    },
+    "uid": "a51ad90288eb4be6bb28f72eeef35a0f",
+    "name": "Upper Body Strength",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "imageUrl": "",
+    "description": "Arms, shoulders, back",
+    "duration": 50,
+    "caloriesKcal": 380,
+    "difficulty": "intermediate",
+    "equipmentItems": [
+      {
+        "name": "Dumbbells",
+        "icon": "🏋️"
+      },
+      {
+        "name": "Cable Machine",
+        "icon": "🤸"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Lifts",
+        "totalExercises": 5,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1a"
+            },
+            "title": "Overhead Press",
+            "reps": 8
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b14"
+            },
+            "title": "Lat Pulldown",
+            "reps": 10
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1d"
+            },
+            "title": "Bicep Curl",
+            "reps": 12
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1b"
+            },
+            "title": "Lateral Raise",
+            "reps": 12
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b1e"
+            },
+            "title": "Tricep Dip",
+            "reps": 12
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-04-20T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b34"
+    },
+    "uid": "4a21e0f5604f426c847e370f41992938",
+    "name": "Core and Balance",
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "imageUrl": "",
+    "description": "Core stability and yoga",
+    "duration": 45,
+    "caloriesKcal": 200,
+    "difficulty": "beginner",
+    "equipmentItems": [],
+    "sections": [
+      {
+        "title": "Core Work",
+        "totalExercises": 3,
+        "items": [
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b23"
+            },
+            "title": "Plank",
+            "durationLabel": "2 min"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b25"
+            },
+            "title": "Downward Dog",
+            "durationLabel": "1 min"
+          },
+          {
+            "type": "exercise",
+            "exerciseId": {
+              "$oid": "6a23bdb0d5732cfded418b24"
+            },
+            "title": "Warrior Pose",
+            "durationLabel": "2 min each side"
+          }
+        ]
+      }
+    ],
+    "createdAt": {
+      "$date": "2025-04-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  }
+]

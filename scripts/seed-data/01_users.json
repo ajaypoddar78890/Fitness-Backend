@@ -1,0 +1,188 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "email": "ajay@athpro.com",
+    "password": "$2a$10$0q6nOS/XkusCkO6uVxubZe2DHcNEVk.UtY/ajA5epOCDZ2m6uYiMi",
+    "name": "Ajay Poddar",
+    "isVerified": true,
+    "authProvider": "email",
+    "lastLogin": {
+      "$date": "2026-06-06T06:26:56.405Z"
+    },
+    "isActive": true,
+    "preferences": {
+      "role": "superadmin"
+    },
+    "profile": {
+      "age": 28,
+      "height": 180,
+      "weight": 78,
+      "gender": "male",
+      "fitnessGoal": "muscle_gain",
+      "activityLevel": "very_active"
+    },
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "email": "priya@athpro.com",
+    "password": "$2a$10$0q6nOS/XkusCkO6uVxubZe2DHcNEVk.UtY/ajA5epOCDZ2m6uYiMi",
+    "name": "Priya Sharma",
+    "isVerified": true,
+    "authProvider": "email",
+    "lastLogin": {
+      "$date": "2026-06-06T06:26:56.405Z"
+    },
+    "isActive": true,
+    "preferences": {
+      "role": "user"
+    },
+    "profile": {
+      "age": 26,
+      "height": 165,
+      "weight": 62,
+      "gender": "female",
+      "fitnessGoal": "weight_loss",
+      "activityLevel": "moderately_active"
+    },
+    "createdAt": {
+      "$date": "2025-01-10T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "email": "rahul@athpro.com",
+    "password": "$2a$10$0q6nOS/XkusCkO6uVxubZe2DHcNEVk.UtY/ajA5epOCDZ2m6uYiMi",
+    "name": "Rahul Mehta",
+    "isVerified": true,
+    "authProvider": "email",
+    "lastLogin": {
+      "$date": "2026-06-06T06:26:56.405Z"
+    },
+    "isActive": true,
+    "preferences": {
+      "role": "user"
+    },
+    "profile": {
+      "age": 30,
+      "height": 175,
+      "weight": 80,
+      "gender": "male",
+      "fitnessGoal": "muscle_gain",
+      "activityLevel": "very_active"
+    },
+    "createdAt": {
+      "$date": "2025-01-15T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "email": "sara@athpro.com",
+    "password": "$2a$10$0q6nOS/XkusCkO6uVxubZe2DHcNEVk.UtY/ajA5epOCDZ2m6uYiMi",
+    "name": "Sara Khan",
+    "isVerified": true,
+    "authProvider": "email",
+    "lastLogin": {
+      "$date": "2026-06-06T06:26:56.405Z"
+    },
+    "isActive": true,
+    "preferences": {
+      "role": "user"
+    },
+    "profile": {
+      "age": 24,
+      "height": 168,
+      "weight": 65,
+      "gender": "female",
+      "fitnessGoal": "maintenance",
+      "activityLevel": "lightly_active"
+    },
+    "createdAt": {
+      "$date": "2025-02-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "email": "dev@athpro.com",
+    "password": "$2a$10$0q6nOS/XkusCkO6uVxubZe2DHcNEVk.UtY/ajA5epOCDZ2m6uYiMi",
+    "name": "Dev Patel",
+    "isVerified": true,
+    "authProvider": "email",
+    "lastLogin": {
+      "$date": "2026-06-06T06:26:56.405Z"
+    },
+    "isActive": true,
+    "preferences": {
+      "role": "user"
+    },
+    "profile": {
+      "age": 29,
+      "height": 172,
+      "weight": 75,
+      "gender": "male",
+      "fitnessGoal": "endurance",
+      "activityLevel": "very_active"
+    },
+    "createdAt": {
+      "$date": "2025-02-10T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "email": "ananya@athpro.com",
+    "password": "$2a$10$0q6nOS/XkusCkO6uVxubZe2DHcNEVk.UtY/ajA5epOCDZ2m6uYiMi",
+    "name": "Ananya Roy",
+    "isVerified": true,
+    "authProvider": "email",
+    "lastLogin": {
+      "$date": "2026-06-06T06:26:56.405Z"
+    },
+    "isActive": true,
+    "preferences": {
+      "role": "user"
+    },
+    "profile": {
+      "age": 27,
+      "height": 170,
+      "weight": 68,
+      "gender": "female",
+      "fitnessGoal": "muscle_gain",
+      "activityLevel": "moderately_active"
+    },
+    "createdAt": {
+      "$date": "2025-02-15T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  }
+]

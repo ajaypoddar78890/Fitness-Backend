@@ -1,0 +1,210 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b01"
+    },
+    "uid": "d3dd7f4613e346d9bf8c73cb4e017b58",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "label": "Chest",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b02"
+    },
+    "uid": "8e62183aa83a463cb5e3bc6705e3d3fe",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "label": "Back",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b03"
+    },
+    "uid": "1d98ef025d7a4784bb42d92b451a8be6",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "label": "Legs",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b04"
+    },
+    "uid": "7a4c5eb5d82946479b437b219cb19abf",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "label": "Shoulders",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b05"
+    },
+    "uid": "75b21bc6a1204fcd8cba391a3c2fb175",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "label": "Arms",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b06"
+    },
+    "uid": "48b3864250ff450498d304bdcc5b636e",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afd"
+    },
+    "label": "Full Body",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b07"
+    },
+    "uid": "6282d65bd5e34b6380f97cc7715cfe96",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afd"
+    },
+    "label": "Lower Body",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b08"
+    },
+    "uid": "749ed6d8065b48ee8194c74f9092ce82",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afe"
+    },
+    "label": "Core",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b09"
+    },
+    "uid": "99baedb4bfd9407c958db444952c73fe",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418afe"
+    },
+    "label": "Hip Flexors",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b0a"
+    },
+    "uid": "47d5cff5b09241b3add643fa4c4ca9c3",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418aff"
+    },
+    "label": "Full Body",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b0b"
+    },
+    "uid": "f1dbb6f11e24458ab4d29edbf7fa2318",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418aff"
+    },
+    "label": "Core",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b0c"
+    },
+    "uid": "2626734fecf745b7bb77d87da61533b0",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418b00"
+    },
+    "label": "Upper Body",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b0d"
+    },
+    "uid": "b72173745cd442ff938d58df672e2c5d",
+    "workoutTypeId": {
+      "$oid": "6a23bdb0d5732cfded418b00"
+    },
+    "label": "Lower Body",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  }
+]

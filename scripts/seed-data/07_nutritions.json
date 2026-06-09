@@ -1,0 +1,554 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b47"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "items": [
+      {
+        "name": "Chicken Breast",
+        "calories": 165,
+        "macros": {
+          "protein": 31,
+          "carbs": 0,
+          "fat": 3.6
+        }
+      },
+      {
+        "name": "Brown Rice",
+        "calories": 111,
+        "macros": {
+          "protein": 2.6,
+          "carbs": 23,
+          "fat": 0.9
+        }
+      },
+      {
+        "name": "Broccoli",
+        "calories": 34,
+        "macros": {
+          "protein": 2.8,
+          "carbs": 7,
+          "fat": 0.4
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-25T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b48"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af6"
+    },
+    "items": [
+      {
+        "name": "Protein Shake",
+        "calories": 200,
+        "macros": {
+          "protein": 25,
+          "carbs": 10,
+          "fat": 3
+        }
+      },
+      {
+        "name": "Banana",
+        "calories": 89,
+        "macros": {
+          "protein": 1.1,
+          "carbs": 23,
+          "fat": 0.3
+        }
+      },
+      {
+        "name": "Peanut Butter",
+        "calories": 96,
+        "macros": {
+          "protein": 4,
+          "carbs": 3.5,
+          "fat": 8
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-26T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b49"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "items": [
+      {
+        "name": "Salmon",
+        "calories": 208,
+        "macros": {
+          "protein": 20,
+          "carbs": 0,
+          "fat": 13
+        }
+      },
+      {
+        "name": "Sweet Potato",
+        "calories": 86,
+        "macros": {
+          "protein": 1.6,
+          "carbs": 20,
+          "fat": 0.1
+        }
+      },
+      {
+        "name": "Asparagus",
+        "calories": 20,
+        "macros": {
+          "protein": 2.2,
+          "carbs": 3.7,
+          "fat": 0.1
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-25T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b4a"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af7"
+    },
+    "items": [
+      {
+        "name": "Greek Yogurt",
+        "calories": 100,
+        "macros": {
+          "protein": 17,
+          "carbs": 7,
+          "fat": 0.4
+        }
+      },
+      {
+        "name": "Blueberries",
+        "calories": 57,
+        "macros": {
+          "protein": 0.7,
+          "carbs": 14,
+          "fat": 0.3
+        }
+      },
+      {
+        "name": "Granola",
+        "calories": 130,
+        "macros": {
+          "protein": 4,
+          "carbs": 19,
+          "fat": 5
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-26T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b4b"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "items": [
+      {
+        "name": "Ground Beef",
+        "calories": 250,
+        "macros": {
+          "protein": 26,
+          "carbs": 0,
+          "fat": 15
+        }
+      },
+      {
+        "name": "White Rice",
+        "calories": 130,
+        "macros": {
+          "protein": 2.7,
+          "carbs": 28,
+          "fat": 0.3
+        }
+      },
+      {
+        "name": "Green Beans",
+        "calories": 31,
+        "macros": {
+          "protein": 2.2,
+          "carbs": 7,
+          "fat": 0.1
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-25T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b4c"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af8"
+    },
+    "items": [
+      {
+        "name": "Eggs",
+        "calories": 155,
+        "macros": {
+          "protein": 13,
+          "carbs": 1.1,
+          "fat": 11
+        }
+      },
+      {
+        "name": "Oats",
+        "calories": 150,
+        "macros": {
+          "protein": 5,
+          "carbs": 27,
+          "fat": 3
+        }
+      },
+      {
+        "name": "Honey",
+        "calories": 64,
+        "macros": {
+          "protein": 0.1,
+          "carbs": 17,
+          "fat": 0
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-26T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b4d"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "items": [
+      {
+        "name": "Turkey Breast",
+        "calories": 135,
+        "macros": {
+          "protein": 26,
+          "carbs": 0,
+          "fat": 3
+        }
+      },
+      {
+        "name": "Quinoa",
+        "calories": 120,
+        "macros": {
+          "protein": 4.4,
+          "carbs": 21,
+          "fat": 2
+        }
+      },
+      {
+        "name": "Spinach",
+        "calories": 23,
+        "macros": {
+          "protein": 2.9,
+          "carbs": 3.6,
+          "fat": 0.4
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-25T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b4e"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418af9"
+    },
+    "items": [
+      {
+        "name": "Cottage Cheese",
+        "calories": 110,
+        "macros": {
+          "protein": 13,
+          "carbs": 4,
+          "fat": 5
+        }
+      },
+      {
+        "name": "Apple",
+        "calories": 52,
+        "macros": {
+          "protein": 0.3,
+          "carbs": 14,
+          "fat": 0.2
+        }
+      },
+      {
+        "name": "Almonds",
+        "calories": 164,
+        "macros": {
+          "protein": 6,
+          "carbs": 6,
+          "fat": 14
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-26T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b4f"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "items": [
+      {
+        "name": "Tuna",
+        "calories": 132,
+        "macros": {
+          "protein": 29,
+          "carbs": 0,
+          "fat": 1.3
+        }
+      },
+      {
+        "name": "Sweet Potato",
+        "calories": 86,
+        "macros": {
+          "protein": 1.6,
+          "carbs": 20,
+          "fat": 0.1
+        }
+      },
+      {
+        "name": "Olive Oil",
+        "calories": 120,
+        "macros": {
+          "protein": 0,
+          "carbs": 0,
+          "fat": 14
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-25T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b50"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afa"
+    },
+    "items": [
+      {
+        "name": "Pasta",
+        "calories": 130,
+        "macros": {
+          "protein": 5,
+          "carbs": 25,
+          "fat": 1.1
+        }
+      },
+      {
+        "name": "Tomato Sauce",
+        "calories": 32,
+        "macros": {
+          "protein": 1.6,
+          "carbs": 7,
+          "fat": 0.2
+        }
+      },
+      {
+        "name": "Parmesan",
+        "calories": 110,
+        "macros": {
+          "protein": 10,
+          "carbs": 1,
+          "fat": 7
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-26T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b51"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "items": [
+      {
+        "name": "Chicken Thighs",
+        "calories": 209,
+        "macros": {
+          "protein": 26,
+          "carbs": 0,
+          "fat": 11
+        }
+      },
+      {
+        "name": "Basmati Rice",
+        "calories": 130,
+        "macros": {
+          "protein": 2.7,
+          "carbs": 28,
+          "fat": 0.3
+        }
+      },
+      {
+        "name": "Carrots",
+        "calories": 41,
+        "macros": {
+          "protein": 0.9,
+          "carbs": 10,
+          "fat": 0.2
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-25T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-25T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b52"
+    },
+    "user": {
+      "$oid": "6a23bdb0d5732cfded418afb"
+    },
+    "items": [
+      {
+        "name": "Protein Bar",
+        "calories": 200,
+        "macros": {
+          "protein": 20,
+          "carbs": 20,
+          "fat": 5
+        }
+      },
+      {
+        "name": "Orange",
+        "calories": 47,
+        "macros": {
+          "protein": 0.9,
+          "carbs": 12,
+          "fat": 0.3
+        }
+      },
+      {
+        "name": "Dark Chocolate",
+        "calories": 168,
+        "macros": {
+          "protein": 2,
+          "carbs": 15,
+          "fat": 12
+        }
+      }
+    ],
+    "date": {
+      "$date": "2025-05-26T00:00:00.000Z"
+    },
+    "createdAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-26T08:00:00.000Z"
+    }
+  }
+]

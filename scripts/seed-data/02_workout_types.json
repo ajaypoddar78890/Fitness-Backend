@@ -1,0 +1,72 @@
+[
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418afc"
+    },
+    "uid": "b2eaeffe870144c8a07ceaac7aa2c044",
+    "label": "Strength",
+    "icon": "💪",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418afd"
+    },
+    "uid": "8a4c0589082d41b5bd94e05000591a52",
+    "label": "Cardio",
+    "icon": "🏃",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418afe"
+    },
+    "uid": "01914eb7738743dba17018e8db7ee6dc",
+    "label": "Yoga",
+    "icon": "🧘",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418aff"
+    },
+    "uid": "4374ea0a79074a4690986b0aa03e2d8f",
+    "label": "HIIT",
+    "icon": "⚡",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "6a23bdb0d5732cfded418b00"
+    },
+    "uid": "f185ee3e6b554dd1982593dfa58f5309",
+    "label": "Flexibility",
+    "icon": "🤸",
+    "createdAt": {
+      "$date": "2025-01-01T08:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2025-06-01T08:00:00.000Z"
+    }
+  }
+]

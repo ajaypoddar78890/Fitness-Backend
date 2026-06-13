@@ -6,6 +6,7 @@ import { UsersModule } from './modules/users/users.module';
 import { WorkoutsModule } from './modules/workouts/workouts.module';
 import { NutritionModule } from './modules/nutrition/nutrition.module';
 import { FitnessTrackingModule } from './modules/fitness-tracking/fitness-tracking.module';
+import { FitnessActivityModule } from './modules/fitness-activity/fitness-activity.module';
 import { WorkoutTypesModule } from './modules/workout-types/workout-types.module';
 import { MuscleGroupsModule } from './modules/muscle-groups/muscle-groups.module';
 import { ExercisesModule } from './modules/exercises/exercises.module';
@@ -25,6 +26,7 @@ import { SavedWorkoutsModule } from './modules/saved-workouts/saved-workouts.mod
     WorkoutsModule,
     NutritionModule,
     FitnessTrackingModule,
+    FitnessActivityModule,
     WorkoutTypesModule,
     MuscleGroupsModule,
     ExercisesModule,

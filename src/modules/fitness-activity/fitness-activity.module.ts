@@ -4,6 +4,10 @@ import {
   FitnessActivity,
   FitnessActivitySchema,
 } from '../../schemas/fitness-activity.schema';
+import {
+  FitnessGoal,
+  FitnessGoalSchema,
+} from '../../schemas/fitness-goal.schema';
 import { FitnessActivityService } from './fitness-activity.service';
 import { FitnessActivityController } from './fitness-activity.controller';
 import { UsersModule } from '../users/users.module';
@@ -13,6 +17,7 @@ import { AuthModule } from '../auth/auth.module';
   imports: [
     MongooseModule.forFeature([
       { name: FitnessActivity.name, schema: FitnessActivitySchema },
+      { name: FitnessGoal.name, schema: FitnessGoalSchema },
     ]),
     UsersModule,
     AuthModule,

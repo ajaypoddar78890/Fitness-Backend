@@ -5,8 +5,18 @@ import {
   FitnessActivity,
   FitnessActivityDocument,
 } from '../../schemas/fitness-activity.schema';
+import {
+  FitnessGoal,
+  FitnessGoalDocument,
+} from '../../schemas/fitness-goal.schema';
 import { UsersService } from '../users/users.service';
-import { CreateFitnessActivityDto } from './dto/fitness-activity.dto';
+import { CreateFitnessActivityDto, UpdateGoalsDto } from './dto/fitness-activity.dto';
+
+const DEFAULT_GOALS = {
+  stepsGoal: 10000,
+  caloriesGoal: 600,
+  workoutDurationGoal: 45,
+};
 
 /** Normalize any date to UTC midnight so one day == one document. */
 function startOfDayUTC(input: string | Date): Date {
@@ -42,6 +52,8 @@ export class FitnessActivityService {
   constructor(
     @InjectModel(FitnessActivity.name)
     private readonly activityModel: Model<FitnessActivityDocument>,
+    @InjectModel(FitnessGoal.name)
+    private readonly goalModel: Model<FitnessGoalDocument>,
     private readonly usersService: UsersService,
   ) {}
 
@@ -180,5 +192,48 @@ export class FitnessActivityService {
       .exec();
 
     return doc;
+  }
+
+  // ── Daily goals (targets) ──────────────────────────────────────────
+
+  /** Get the user's daily targets, returning sensible defaults if unset. */
+  async getGoals(uid: string) {
+    const userId = await this.resolveUserId(uid);
+    const doc = await this.goalModel.findOne({ userId }).lean().exec();
+    if (!doc) {
+      return { userId, ...DEFAULT_GOALS };
+    }
+    return {
+      userId,
+      stepsGoal: doc.stepsGoal ?? DEFAULT_GOALS.stepsGoal,
+      caloriesGoal: doc.caloriesGoal ?? DEFAULT_GOALS.caloriesGoal,
+      workoutDurationGoal: doc.workoutDurationGoal ?? DEFAULT_GOALS.workoutDurationGoal,
+    };
+  }
+
+  /** Create or update the user's daily targets (one doc per user). */
+  async updateGoals(uid: string, dto: UpdateGoalsDto) {
+    const userId = await this.resolveUserId(uid);
+
+    const set: any = {};
+    if (dto.stepsGoal != null) set.stepsGoal = dto.stepsGoal;
+    if (dto.caloriesGoal != null) set.caloriesGoal = dto.caloriesGoal;
+    if (dto.workoutDurationGoal != null) set.workoutDurationGoal = dto.workoutDurationGoal;
+
+    const doc = await this.goalModel
+      .findOneAndUpdate(
+        { userId },
+        { $set: set, $setOnInsert: { userId } },
+        { new: true, upsert: true, setDefaultsOnInsert: true },
+      )
+      .lean()
+      .exec();
+
+    return {
+      userId,
+      stepsGoal: doc.stepsGoal,
+      caloriesGoal: doc.caloriesGoal,
+      workoutDurationGoal: doc.workoutDurationGoal,
+    };
   }
 }

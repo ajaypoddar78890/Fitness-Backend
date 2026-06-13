@@ -4,6 +4,7 @@ import {
   IsInt,
   IsNumber,
   IsOptional,
+  Max,
   Min,
   ValidateNested,
 } from 'class-validator';
@@ -49,4 +50,24 @@ export class CreateFitnessActivityDto {
   @ValidateNested({ each: true })
   @Type(() => ActiveHourDto)
   activeHours?: ActiveHourDto[];
+}
+
+export class UpdateGoalsDto {
+  @IsOptional()
+  @IsInt()
+  @Min(1000)
+  @Max(50000)
+  stepsGoal?: number;
+
+  @IsOptional()
+  @IsInt()
+  @Min(50)
+  @Max(10000)
+  caloriesGoal?: number;
+
+  @IsOptional()
+  @IsInt()
+  @Min(5)
+  @Max(600)
+  workoutDurationGoal?: number;
 }

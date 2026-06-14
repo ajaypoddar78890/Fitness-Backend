@@ -4,6 +4,29 @@ import { BaseDocumentSchema, applyBaseSchemaFeatures } from '../common/schemas/b
 
 export type ExerciseDocument = Exercise & Document;
 
+@Schema({ _id: false })
+export class ExercisePrescription {
+  @Prop()
+  setsLabel: string; // "3-4"
+
+  @Prop()
+  repsLabel: string; // "10-12" or "30s"
+
+  @Prop()
+  restLabel: string; // "45s", "90S"
+
+  @Prop()
+  tempo: string; // "2-0-2", "Expl."
+
+  @Prop()
+  rpe: number; // 7
+
+  @Prop()
+  caloriesPerMin: number; // ~12
+}
+
+export const ExercisePrescriptionSchema = SchemaFactory.createForClass(ExercisePrescription);
+
 @Schema({ collection: 'exercises', timestamps: true })
 export class Exercise extends BaseDocumentSchema {
   @Prop({ type: Types.ObjectId, ref: 'MuscleGroup', required: true })
@@ -41,6 +64,41 @@ export class Exercise extends BaseDocumentSchema {
 
   @Prop()
   durationSeconds: number;
+
+  // ── Rich coaching fields for the Exercise Detail screen ──
+  @Prop({ type: [String], default: [] })
+  mediaUrls: string[]; // image/video carousel
+
+  @Prop({ type: [String], default: [] })
+  primaryMuscles: string[]; // ['Quads','Glutes','Deltoids']
+
+  @Prop({ type: [String], default: [] })
+  secondaryMuscles: string[]; // ['Calves','Core','Traps']
+
+  @Prop({ enum: ['cardio', 'strength', 'mobility', 'core', 'plyometric'], default: 'strength' })
+  category: string;
+
+  @Prop({ enum: ['compound', 'isolation'], default: 'compound' })
+  mechanic: string;
+
+  @Prop({ enum: ['push', 'pull', 'static', 'multi'], default: 'push' })
+  force: string;
+
+  @Prop({ type: ExercisePrescriptionSchema })
+  prescription: ExercisePrescription;
+
+  @Prop()
+  breathingCue: string;
+
+  @Prop({ type: [String], default: [] })
+  safetyNotes: string[];
+
+  @Prop({ type: [String], default: [] })
+  commonMistakes: string[];
+
+  // Names of alternative/substitute exercises (kept as labels for simplicity)
+  @Prop({ type: [String], default: [] })
+  alternatives: string[];
 }
 
 export const ExerciseSchema = SchemaFactory.createForClass(Exercise);

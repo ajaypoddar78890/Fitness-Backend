@@ -15,6 +15,43 @@ export class WorkoutsService {
     return this.workoutModel.find({ user: userId }).exec();
   }
 
+  /**
+   * Catalog list for the training flow. Filter by workout type and/or muscle
+   * group and/or goal. Returns lightweight cards (no heavy section data).
+   */
+  async findCatalog(filter: { workoutTypeId?: string; muscleGroupId?: string; goal?: string }) {
+    const select =
+      'name imageUrl description duration caloriesKcal difficulty goal levelLabel ' +
+      'creatorType creatorName rating ratingCount timesCompleted totalSets ' +
+      'targetMuscleLabel targetMusclePercent popularity';
+
+    const build = (withMuscle: boolean) => {
+      const q: any = { isCatalog: true };
+      if (filter.workoutTypeId) q.workoutTypeId = filter.workoutTypeId;
+      if (withMuscle && filter.muscleGroupId) q.muscleGroupId = filter.muscleGroupId;
+      if (filter.goal) q.goal = filter.goal;
+      return q;
+    };
+
+    let docs = await this.workoutModel
+      .find(build(true))
+      .select(select)
+      .sort({ popularity: -1, rating: -1 })
+      .exec();
+
+    // Fallback: muscle has no dedicated workout yet → show the type's workouts
+    // so the flow never dead-ends on an empty list.
+    if (docs.length === 0 && filter.muscleGroupId && filter.workoutTypeId) {
+      docs = await this.workoutModel
+        .find(build(false))
+        .select(select)
+        .sort({ popularity: -1, rating: -1 })
+        .exec();
+    }
+
+    return docs;
+  }
+
   findById(id: string) {
     return this.workoutModel.findById(id).exec();
   }
@@ -59,6 +96,14 @@ export class WorkoutsService {
           equipment: exercise?.equipment || null,
           equipmentDetails: exercise?.equipmentDetails || null,
           difficulty: exercise?.difficulty || null,
+          // Per-item prescription (Workout Details rows)
+          setsLabel: item.setsLabel || null,
+          repsLabel: item.repsLabel || (item.reps ? `${item.reps} Reps` : null),
+          restLabel: item.restLabel || (item.restSeconds ? `${item.restSeconds}s` : null),
+          tempo: item.tempo || null,
+          rpe: item.rpe ?? null,
+          weightLabel: item.weightLabel || null,
+          note: item.note || null,
         };
       });
 
@@ -78,14 +123,33 @@ export class WorkoutsService {
       name: workoutObj.name,
       imageUrl: workoutObj.imageUrl || null,
       description: workoutObj.description || null,
+      // Header chips + social proof
+      goal: workoutObj.goal || null,
+      levelLabel: workoutObj.levelLabel || workoutObj.difficulty || null,
+      creator: {
+        type: workoutObj.creatorType || null,
+        name: workoutObj.creatorName || null,
+      },
+      rating: workoutObj.rating ?? null,
+      ratingCount: workoutObj.ratingCount ?? null,
+      timesCompleted: workoutObj.timesCompleted ?? null,
       stats: {
         durationMinutes: workoutObj.duration ?? null,
         caloriesKcal: workoutObj.caloriesKcal ?? null,
         difficulty: workoutObj.difficulty || null,
+        totalSets: workoutObj.totalSets ?? null,
       },
+      target: workoutObj.targetMuscleLabel
+        ? {
+            label: workoutObj.targetMuscleLabel,
+            percent: workoutObj.targetMusclePercent ?? null,
+          }
+        : null,
       equipment: {
         totalItems: equipmentItems.length,
         items: equipmentItems,
+        required: equipmentItems.filter((e: any) => !e.optional),
+        optional: equipmentItems.filter((e: any) => !!e.optional),
       },
       actions: {
         canScheduleWorkout: true,

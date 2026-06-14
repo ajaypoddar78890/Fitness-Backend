@@ -1,9 +1,20 @@
-import { Controller, Post, Get, Param, Put, Delete, Body, NotFoundException } from '@nestjs/common';
+import { Controller, Post, Get, Param, Put, Delete, Body, Query, NotFoundException } from '@nestjs/common';
 import { WorkoutsService } from './workouts.service';
 
 @Controller('workouts')
 export class WorkoutsController {
   constructor(private svc: WorkoutsService) {}
+
+  // GET /workouts/catalog?workoutTypeId=&muscleGroupId=&goal=
+  @Get('catalog')
+  async catalog(
+    @Query('workoutTypeId') workoutTypeId?: string,
+    @Query('muscleGroupId') muscleGroupId?: string,
+    @Query('goal') goal?: string,
+  ) {
+    const data = await this.svc.findCatalog({ workoutTypeId, muscleGroupId, goal });
+    return { success: true, data };
+  }
 
   @Post()
   async create(@Body() body: any) {

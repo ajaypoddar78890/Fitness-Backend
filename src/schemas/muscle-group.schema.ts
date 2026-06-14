@@ -11,6 +11,26 @@ export class MuscleGroup extends BaseDocumentSchema {
 
   @Prop({ required: true })
   label: string;
+
+  // ── Rich fields for the Target Muscle screen ──
+  @Prop()
+  imageUrl: string;
+
+  @Prop({ default: 0 })
+  workoutCount: number;
+
+  // Functional role tag shown on the card: MAIN / CORE / STABILITY / MIXED
+  @Prop({ enum: ['main', 'core', 'stability', 'mixed'], default: 'main' })
+  roleTag: string;
+
+  @Prop({ enum: ['upper', 'lower', 'core', 'full'], default: 'upper' })
+  region: string;
+
+  @Prop({ default: false })
+  isFullBody: boolean;
+
+  @Prop({ default: 0 })
+  sortOrder: number;
 }
 
 export const MuscleGroupSchema = SchemaFactory.createForClass(MuscleGroup);

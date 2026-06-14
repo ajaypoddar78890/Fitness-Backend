@@ -14,6 +14,9 @@ export class WorkoutEquipmentItem {
 
   @Prop()
   quantityLabel: string;
+
+  @Prop({ default: false })
+  optional: boolean;
 }
 
 @Schema({ _id: false })
@@ -41,6 +44,28 @@ export class WorkoutSectionItem {
 
   @Prop({ default: true })
   showInfoIcon: boolean;
+
+  // ── Per-item prescription shown on the Workout Details rows ──
+  @Prop()
+  setsLabel: string; // "4 Sets"
+
+  @Prop()
+  repsLabel: string; // "10-12 Reps" or "30s"
+
+  @Prop()
+  restLabel: string; // "90S"
+
+  @Prop()
+  tempo: string; // "2-0-2"
+
+  @Prop()
+  rpe: number; // 8.5
+
+  @Prop()
+  weightLabel: string; // "12KG"
+
+  @Prop()
+  note: string; // coaching cue under the row
 }
 
 @Schema({ _id: false })
@@ -93,8 +118,53 @@ export class Workout extends BaseDocumentSchema {
   @Prop()
   scheduledAt: Date;
 
-  @Prop({ type: Types.ObjectId, ref: 'User', required: true })
+  // Optional now: curated/catalog workouts are not owned by a user.
+  @Prop({ type: Types.ObjectId, ref: 'User' })
   user: Types.ObjectId;
+
+  // ── Catalog links + Workout Details header fields ──
+  @Prop({ type: Types.ObjectId, ref: 'WorkoutType', index: true })
+  workoutTypeId: Types.ObjectId;
+
+  @Prop({ type: Types.ObjectId, ref: 'MuscleGroup', index: true })
+  muscleGroupId: Types.ObjectId;
+
+  @Prop({ enum: ['hypertrophy', 'strength', 'endurance', 'fat_loss', 'mobility', 'mixed'] })
+  goal: string;
+
+  @Prop()
+  levelLabel: string; // "ADVANCED"
+
+  @Prop({ enum: ['ai_coach', 'coach', 'user'], default: 'ai_coach' })
+  creatorType: string;
+
+  @Prop()
+  creatorName: string;
+
+  @Prop({ default: 0 })
+  rating: number; // 4.9
+
+  @Prop({ default: 0 })
+  ratingCount: number; // 1200
+
+  @Prop({ default: 0 })
+  timesCompleted: number; // 128
+
+  @Prop({ default: 0 })
+  totalSets: number;
+
+  // Target-muscle emphasis bar
+  @Prop()
+  targetMuscleLabel: string; // "CHEST/TRI"
+
+  @Prop({ default: 0 })
+  targetMusclePercent: number; // 80
+
+  @Prop({ default: false })
+  isCatalog: boolean;
+
+  @Prop({ default: 0 })
+  popularity: number;
 }
 
 export const WorkoutSchema = SchemaFactory.createForClass(Workout);
